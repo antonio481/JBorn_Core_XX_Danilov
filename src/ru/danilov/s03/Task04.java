@@ -2,9 +2,9 @@ package ru.danilov.s03;
 
 public class Task04 {
     public static void main(String[] args) {
-        numberOfOccurrences("Jborn", 'r');
+        System.out.println(numberOfOccurrences("Jborn", 'r'));
     }
-    private static void numberOfOccurrences(String string, char c){
+    private static String numberOfOccurrences(String string, char c){
         int occurrences=0;
         StringBuilder s=new StringBuilder(string);
         for (int i = 0; i < s.length(); i++) {
@@ -14,6 +14,6 @@ public class Task04 {
             }
         }
         System.out.println("Количество вхождений: "+occurrences);
-        System.out.println(s);
+        return s.toString();
     }
 }
